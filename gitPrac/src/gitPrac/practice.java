@@ -56,4 +56,22 @@ public class practice {
 		return returnString;
 		
 	}
+	public boolean moreNumbers(String practice){
+		boolean returnString=false;
+		
+		for (int i=0; i < practice.length(); i++){
+			if(practice.equals(practice.charAt(i)) || practice.equals("")){
+				
+				
+				returnString = true;
+				
+			}else{
+				returnString = false;
+			}
+		}
+	
+		return returnString;
+		
+		
+	}
 }
