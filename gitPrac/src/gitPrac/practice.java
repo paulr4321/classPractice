@@ -81,7 +81,7 @@ public class practice {
 	}
 	
 
-	public void StringCalculator(String practice){
+	public void Add(String practice){
 		int calc =0;
 		for (int i=0; i < practice.length(); i++){
 			if(Character.isDigit(practice.charAt(i))){
