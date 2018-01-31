@@ -109,4 +109,16 @@ public class practice {
 			}
 		}
 	}
+	public void StringCalculatorTwoNum(String practice){
+		int calc =0;
+		int count =0;
+		for (int i=0; i < practice.length(); i++){
+			if(Character.isDigit(practice.charAt(i))){
+				if(count<3){
+					calc = calc +practice.charAt(i);
+				}
+				
+			}
+		}
+	}
 }
