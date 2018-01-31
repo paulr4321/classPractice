@@ -74,4 +74,13 @@ public class practice {
 		
 		
 	}
+	public void StringCalculator(String practice){
+		int calc =0;
+		for (int i=0; i < practice.length(); i++){
+			if(practice.equals(practice.charAt(i))){
+				calc = calc +practice.charAt(i);
+				
+			}
+		}
+	}
 }
