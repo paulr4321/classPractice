@@ -16,7 +16,9 @@ public class practice {
 	}
 	
 	public boolean checkOne(String practice){
-		
+        
+		//checks if method can handle two charcaters to calculate
+        
 		boolean returnString=false;
 		int count =0;
 		for (int i=0; i < practice.length(); i++){
@@ -37,6 +39,8 @@ public class practice {
 		
 	}
 	public boolean checkTwo(String practice){
+        
+        //checks if method can handle two charcaters to calculate
 		
 		boolean returnString=false;
 		int count =0;
