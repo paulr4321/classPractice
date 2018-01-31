@@ -13,4 +13,17 @@ public class practice {
 		}
 		return returnString;
 	}
+	
+	public boolean checkOne(String practice){
+		
+		boolean returnString;
+		
+		if(practice.equals(null) || practice.equals("")){
+		    returnString = true;
+		}else{
+			returnString = false;
+		}
+		return returnString;
+		
+	}
 }
