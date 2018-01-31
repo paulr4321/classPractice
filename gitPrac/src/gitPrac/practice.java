@@ -2,17 +2,6 @@ package gitPrac;
 
 public class practice {
 	
-	public static boolean isNum(String strNum) {
-	    boolean ret = true;
-	    try {
-
-	        Double.parseDouble(strNum);
-
-	    }catch (NumberFormatException e) {
-	        ret = false;
-	    }
-	    return ret;
-	}
 
 	public boolean checkEmpty(String practice){
 		
