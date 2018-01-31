@@ -1,6 +1,18 @@
 package gitPrac;
 
 public class practice {
+	
+	public static boolean isNum(String strNum) {
+	    boolean ret = true;
+	    try {
+
+	        Double.parseDouble(strNum);
+
+	    }catch (NumberFormatException e) {
+	        ret = false;
+	    }
+	    return ret;
+	}
 
 	public boolean checkEmpty(String practice){
 		
@@ -19,7 +31,7 @@ public class practice {
 		boolean returnString=false;
 		int count =0;
 		for (int i=0; i < practice.length(); i++){
-			if(practice.equals(practice.charAt(i)) || practice.equals("")){
+			if(Character.isDigit(practice.charAt(i)) || practice.equals("")){
 				count++;
 				if(count<2){
 					returnString = true;
@@ -40,7 +52,7 @@ public class practice {
 		boolean returnString=false;
 		int count =0;
 		for (int i=0; i < practice.length(); i++){
-			if(practice.equals(practice.charAt(i)) || practice.equals("")){
+			if(Character.isDigit(practice.charAt(i)) || practice.equals("")){
 				count ++;
 				if(count<3){
 					returnString = true;
@@ -60,7 +72,7 @@ public class practice {
 		boolean returnString=false;
 		
 		for (int i=0; i < practice.length(); i++){
-			if(practice.equals(practice.charAt(i)) || practice.equals("")){
+			if(Character.isDigit(practice.charAt(i))){
 				
 				
 				returnString = true;
@@ -74,10 +86,12 @@ public class practice {
 		
 		
 	}
+	
+
 	public void StringCalculator(String practice){
 		int calc =0;
 		for (int i=0; i < practice.length(); i++){
-			if(practice.equals(practice.charAt(i))){
+			if(Character.isDigit(practice.charAt(i))){
 				calc = calc +practice.charAt(i);
 				
 			}
